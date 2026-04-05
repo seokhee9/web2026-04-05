@@ -34,128 +34,104 @@
 
 <main class="pt-16 pb-24 md:pb-16">
   
-  <section id="home" class="relative overflow-hidden pt-12 pb-16 px-6 lg:px-12">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-      <div class="lg:col-span-7 z-10">
-        <span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-wider mb-6">2박 3일 · 부모님 동반 효도여행</span>
-        <h2 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tighter leading-[1.1] mb-8">
+  <!-- Hero Section: Clean & Typography Focused -->
+  <section id="home" class="relative overflow-hidden pt-20 pb-24 px-6 lg:px-12 bg-gradient-to-br from-white to-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="z-10 text-center lg:text-left">
+        <span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-wider mb-8">2박 3일 · 부모님 동반 효도여행</span>
+        <h2 class="font-headline text-6xl md:text-8xl font-extrabold text-primary tracking-tighter leading-[1.0] mb-12">
           🇯🇵 도쿄의 봄, <br/> <span class="text-secondary italic">가족의 기억</span>
         </h2>
         
-        <div class="bg-surface-container-lowest/90 backdrop-blur-xl editorial-shadow rounded-2xl p-3 flex flex-col md:flex-row gap-2 max-w-2xl border border-white">
-          <div class="flex-1 flex items-center px-4 gap-3 bg-surface-container-low rounded-xl py-4">
-            <span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
-            <div class="flex flex-col">
-              <span class="text-[10px] text-outline font-bold uppercase tracking-widest">Base Camp</span>
-              <span class="text-sm font-extrabold text-on-surface">토시마구 (이케부쿠로 인근)</span>
+        <div class="bg-white/60 backdrop-blur-xl editorial-shadow rounded-[2.5rem] p-4 flex flex-col md:flex-row gap-3 max-w-3xl border border-white mx-auto lg:mx-0">
+          <div class="flex-1 flex items-center px-6 gap-4 bg-surface-container-low rounded-[1.8rem] py-6">
+            <span class="material-symbols-outlined text-secondary text-3xl" data-icon="location_on">location_on</span>
+            <div class="flex flex-col text-left">
+              <span class="text-[10px] text-outline font-bold uppercase tracking-widest mb-1">Base Camp</span>
+              <span class="text-lg font-extrabold text-on-surface">토시마구 (이케부쿠로)</span>
             </div>
           </div>
-          <div class="flex flex-row gap-2">
-            <div class="flex-1 md:w-44 flex items-center px-4 gap-3 bg-surface-container-low rounded-xl py-4">
-              <span class="material-symbols-outlined text-secondary" data-icon="calendar_today">calendar_today</span>
-              <div class="flex flex-col">
-                <span class="text-[10px] text-outline font-bold uppercase tracking-widest">Schedule</span>
-                <span class="text-sm font-extrabold text-on-surface">4/12 ~ 4/14 (2박 3일)</span>
-              </div>
+          <div class="flex-1 flex items-center px-6 gap-4 bg-surface-container-low rounded-[1.8rem] py-6">
+            <span class="material-symbols-outlined text-secondary text-3xl" data-icon="calendar_today">calendar_today</span>
+            <div class="flex flex-col text-left">
+              <span class="text-[10px] text-outline font-bold uppercase tracking-widest mb-1">Schedule</span>
+              <span class="text-lg font-extrabold text-on-surface">4/12 ~ 4/14</span>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="lg:col-span-5 relative mt-8 lg:mt-0">
-        <div class="absolute -top-12 -right-24 w-[120%] h-[120%] bg-primary-container/10 rounded-full blur-3xl -z-10"></div>
-        <div class="asymmetric-pill overflow-hidden editorial-shadow h-[450px] lg:h-[550px] w-full transform lg:translate-x-4">
-          <img alt="Tokyo View" class="w-full h-full object-cover" src="images/hero.jpg"/>
-        </div>
-      </div>
     </div>
+    <!-- Decorative elements instead of images -->
+    <div class="absolute -right-24 top-24 w-96 h-96 bg-primary-container/20 rounded-full blur-[120px] -z-10"></div>
+    <div class="absolute -left-24 bottom-12 w-80 h-80 bg-secondary-container/10 rounded-full blur-[100px] -z-10"></div>
   </section>
 
-  <section id="plan" class="py-16 bg-surface-container-low">
+  <!-- Plan Section -->
+  <section id="plan" class="py-24 bg-surface-container-low">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="flex flex-col mb-12">
-        <h3 class="font-headline text-3xl font-extrabold text-primary tracking-tight mb-2">📅 부모님 맞춤형 최적 일정</h3>
-        <p class="text-on-surface-variant text-sm font-medium">대기 시간 최소화, 엘리베이터 동선 위주의 편안한 경로</p>
-        
-        <div class="flex gap-3 overflow-x-auto py-6 no-scrollbar">
-          <div class="flex-shrink-0 flex items-center gap-2 bg-white border border-outline-variant/30 px-5 py-2.5 rounded-full shadow-sm">
-            <span class="material-symbols-outlined text-secondary text-sm" data-icon="train">train</span>
-            <span class="font-bold text-sm text-on-surface-variant">넥스(N'EX) 직통</span>
-          </div>
-          <div class="flex-shrink-0 flex items-center gap-2 bg-white border border-outline-variant/30 px-5 py-2.5 rounded-full shadow-sm">
-            <span class="material-symbols-outlined text-secondary text-sm" data-icon="elevator">elevator</span>
-            <span class="font-bold text-sm text-on-surface-variant">교통 약자 동선</span>
-          </div>
-          <div class="flex-shrink-0 flex items-center gap-2 bg-white border border-outline-variant/30 px-5 py-2.5 rounded-full shadow-sm">
-            <span class="material-symbols-outlined text-secondary text-sm" data-icon="family_restroom">family_restroom</span>
-            <span class="font-bold text-sm text-on-surface-variant">여유로운 호흡</span>
-          </div>
-        </div>
+      <div class="flex flex-col mb-16 items-center text-center">
+        <h3 class="font-headline text-4xl font-extrabold text-primary tracking-tight mb-4">📅 부모님 맞춤형 최적 일정</h3>
+        <p class="text-on-surface-variant max-w-xl leading-relaxed font-medium">부모님의 체력을 고려하여 대기 시간을 줄이고 엘리베이터 동선을 최우선으로 설계한 경로입니다.</p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div class="bg-surface-container-lowest editorial-shadow rounded-3xl p-8 border border-outline-variant/10 relative overflow-hidden group">
-          <div class="absolute top-0 right-0 p-6 text-primary/5 font-black text-6xl italic group-hover:scale-110 transition-transform">01</div>
-          <div class="bg-primary text-white font-extrabold w-16 h-16 flex items-center justify-center rounded-2xl mb-6 text-xl shadow-lg shadow-primary/20">
-            DAY 1
-          </div>
-          <h4 class="text-xl font-bold mb-6">도쿄 입성 및 적응</h4>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">공항 → 이케부쿠로</strong>나리타 익스프레스(N'EX)로 환승 없이 편안하게 이동</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Day Cards: Focus on clean spacing -->
+        <div class="bg-white editorial-shadow rounded-[2.5rem] p-10 border border-outline-variant/10 relative overflow-hidden group hover:border-primary/20 transition-colors">
+          <div class="absolute top-0 right-0 p-8 text-primary/5 font-black text-7xl italic">01</div>
+          <div class="bg-primary text-white font-extrabold px-6 py-2 rounded-full inline-block mb-10 text-sm shadow-lg shadow-primary/20">DAY 1</div>
+          <h4 class="text-2xl font-bold mb-8 text-primary">도쿄 입성</h4>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">공항 → 이케부쿠로</strong>나리타 익스프레스(N'EX)로 환승 없이 편안하게 이동</p>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">숙소 체크인 및 휴식</strong>나가사키 동네 골목 산책 (조용한 일본 정취)</p>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">숙소 체크인 및 휴식</strong>조용한 나가사키 동네 골목 산책</p>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">저녁: 닝교초 이마한</strong>토부 백화점에서 고급 스키야키 대접 (직원 서비스)</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-surface-container-lowest editorial-shadow rounded-3xl p-8 border border-outline-variant/10 relative overflow-hidden group">
-          <div class="absolute top-0 right-0 p-6 text-primary/5 font-black text-6xl italic group-hover:scale-110 transition-transform">02</div>
-          <div class="bg-primary text-white font-extrabold w-16 h-16 flex items-center justify-center rounded-2xl mb-6 text-xl shadow-lg shadow-primary/20">
-            DAY 2
-          </div>
-          <h4 class="text-xl font-bold mb-6">전통과 현대의 조화</h4>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">아사쿠사 센소지</strong>인력거 투어로 부모님 체력 안배하며 전통 구경</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">시부야 스카이</strong>예약 필수! 도쿄 전경을 한눈에 담는 하이라이트</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">저녁: 히츠마부시 빈쵸</strong>파르코 백화점 장어덮밥으로 기력 보충</p>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">저녁: 닝교초 이마한</strong>고급 스키야키 대접 (토부 백화점)</p>
             </li>
           </ul>
         </div>
 
-        <div class="bg-surface-container-lowest editorial-shadow rounded-3xl p-8 border border-outline-variant/10 relative overflow-hidden group">
-          <div class="absolute top-0 right-0 p-6 text-primary/5 font-black text-6xl italic group-hover:scale-110 transition-transform">03</div>
-          <div class="bg-primary text-white font-extrabold w-16 h-16 flex items-center justify-center rounded-2xl mb-6 text-xl shadow-lg shadow-primary/20">
-            DAY 3
-          </div>
-          <h4 class="text-xl font-bold mb-6">여유로운 귀국길</h4>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">오전 07:30 - 마지막 조식</strong>이케부쿠로역 인근 베이커리 카페에서 가벼운 아침 식사</p>
+        <div class="bg-white editorial-shadow rounded-[2.5rem] p-10 border border-outline-variant/10 relative overflow-hidden group hover:border-primary/20 transition-colors">
+          <div class="absolute top-0 right-0 p-8 text-primary/5 font-black text-7xl italic">02</div>
+          <div class="bg-primary text-white font-extrabold px-6 py-2 rounded-full inline-block mb-10 text-sm shadow-lg shadow-primary/20">DAY 2</div>
+          <h4 class="text-2xl font-bold mb-8 text-primary">도심 투어</h4>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">아사쿠사 인력거</strong>부모님 체력 안배하며 전통 구경</p>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">오전 08:30 - 공항 직통 열차</strong>나리타 익스프레스(N'EX) 탑승 (환승 없이 공항 이동)</p>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">시부야 스카이</strong>예약 필수! 도쿄 전경 조망</p>
             </li>
-            <li class="flex items-start gap-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block">오전 10:00 - 공항 면세 쇼핑</strong>체크인 후 면세점에서 가족/지인 기념품 여유롭게 쇼핑</p>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">저녁: 히츠마부시 빈쵸</strong>장어덮밥 보양식 (파르코 백화점)</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white editorial-shadow rounded-[2.5rem] p-10 border border-outline-variant/10 relative overflow-hidden group hover:border-primary/20 transition-colors">
+          <div class="absolute top-0 right-0 p-8 text-primary/5 font-black text-7xl italic">03</div>
+          <div class="bg-primary text-white font-extrabold px-6 py-2 rounded-full inline-block mb-10 text-sm shadow-lg shadow-primary/20">DAY 3</div>
+          <h4 class="text-2xl font-bold mb-8 text-primary">여유로운 귀국</h4>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">07:30 마지막 조식</strong>베이커리 카페에서의 여유</p>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">08:30 N'EX 탑승</strong>환승 없이 공항 직통 이동</p>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+              <p class="text-sm font-medium text-on-surface-variant"><strong class="text-on-surface block text-base mb-1">10:00 면세 쇼핑</strong>여유로운 체크인 후 선물 구매</p>
             </li>
           </ul>
         </div>
@@ -163,150 +139,154 @@
     </div>
   </section>
 
-  <section id="tips" class="py-16 px-6 max-w-7xl mx-auto">
-    <div class="bg-primary text-white rounded-[3rem] p-8 lg:p-16 flex flex-col lg:flex-row gap-12 items-center">
-      <div class="lg:w-1/2 space-y-6">
-        <h3 class="font-headline text-3xl lg:text-4xl font-extrabold tracking-tight">💡 부모님 동반 여행 필수 팁</h3>
-        <p class="text-white/80 leading-relaxed">익숙하지 않은 일본 교통과 문화, 이 세 가지만 기억하면 완벽한 효도 여행이 됩니다.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-            <span class="material-symbols-outlined text-secondary-fixed-dim mb-3" data-icon="credit_card">credit_card</span>
-            <h5 class="font-bold mb-2">교통카드 미리 준비</h5>
-            <p class="text-xs text-white/70">아이폰 유저는 지갑 앱에서 파스모/스이카 즉시 발급 가능. 매번 표 사는 수고를 덜어드려요.</p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-            <span class="material-symbols-outlined text-secondary-fixed-dim mb-3" data-icon="chair">chair</span>
-            <h5 class="font-bold mb-2">백화점 식당가 활용</h5>
-            <p class="text-xs text-white/70">이케부쿠로 세이부/토부 백화점 식당가는 쾌적하고 웨이팅 의자가 잘 되어 있습니다.</p>
-          </div>
-        </div>
-      </div>
-      <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
-        <div class="rounded-3xl overflow-hidden h-48 sm:h-64 shadow-2xl rotate-3">
-          <img alt="Japan Morning" class="w-full h-full object-cover" src="images/tips1.jpg"/>
-        </div>
-        <div class="rounded-3xl overflow-hidden h-48 sm:h-64 shadow-2xl -rotate-3 translate-y-8">
-          <img alt="Japan Garden" class="w-full h-full object-cover" src="images/tips2.jpg"/>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="food" class="py-20 bg-surface-container-lowest">
+  <!-- Food Section: Icon Based Design -->
+  <section id="food" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h3 class="font-headline text-4xl font-extrabold text-primary tracking-tight">🍜 추천 맛집 가이드</h3>
-        <p class="text-on-surface-variant mt-4 font-medium">부모님 입맛에도 딱! 이케부쿠로 백화점 중심 실패 없는 메뉴</p>
+      <div class="text-center mb-20">
+        <h3 class="font-headline text-4xl font-extrabold text-primary tracking-tight">🍜 검증된 추천 맛집</h3>
+        <p class="text-on-surface-variant mt-4 font-medium">사진 없어도 확실한, 부모님 입맛 저격 맛집 가이드</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_sukiyaki.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="스키야키">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">PREMIUM</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Restaurant Item 1 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-orange-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-orange-200 opacity-40 absolute -right-4 -bottom-4">restaurant</span>
+            <span class="material-symbols-outlined text-5xl text-orange-600" data-icon="soup_kitchen">soup_kitchen</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">닝교초 이마한</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">최고급 스키야키 전문점. 직원이 눈앞에서 정성껏 구워줍니다. (이케부쿠로 토부 15층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Ningyocho Imahan Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">닝교초 이마한</h4>
+              <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-[10px] font-bold">PREMIUM</span>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">부모님 만족도 1위. 정성스러운 서비스와 최고급 스키야키를 즐기실 수 있습니다. (토부 15층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Ningyocho Imahan Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
 
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_unagi.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="장어덮밥">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">STAMINA</div>
+        <!-- Restaurant Item 2 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-amber-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-amber-200 opacity-40 absolute -right-4 -bottom-4">bolt</span>
+            <span class="material-symbols-outlined text-5xl text-amber-600" data-icon="nutrition">nutrition</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">히츠마부시 빈쵸</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">나고야식 장어덮밥. 숯불 향 가득한 보양식으로 최고입니다. (이케부쿠로 파르코 7층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Hitsumabushi Bincho Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">히츠마부시 빈쵸</h4>
+              <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-[10px] font-bold">STAMINA</span>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">나고야식 장어덮밥 전문점. 여행의 피로를 풀어줄 숯불 장어 요리입니다. (파르코 7층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Hitsumabushi Bincho Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
 
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_sushi.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="스시">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">FRESH</div>
+        <!-- Restaurant Item 3 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-blue-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-blue-200 opacity-40 absolute -right-4 -bottom-4">water_drop</span>
+            <span class="material-symbols-outlined text-5xl text-blue-600" data-icon="set_meal">set_meal</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">카츠미도리</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">가성비와 퀄리티를 모두 잡은 도쿄 최고 인기 회전초밥. (이케부쿠로 세이부 8층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Katsumidori Seibu Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">카츠미도리</h4>
+              <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold">FRESH</span>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">줄 서서 먹는 도쿄의 활기찬 초밥집. 백화점 식당가에 위치해 쾌적합니다. (세이부 8층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Katsumidori Seibu Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
 
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_tonkatsu.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="돈카츠">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">CLASSIC</div>
+        <!-- Restaurant Item 4 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-rose-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-rose-200 opacity-40 absolute -right-4 -bottom-4">lunch_dining</span>
+            <span class="material-symbols-outlined text-5xl text-rose-600" data-icon="restaurant">restaurant</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">돈카츠 마이센</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">젓가락으로 잘릴 정도로 부드러운 안심 돈카츠가 일품입니다. (이케부쿠로 세이부 9층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Maisen Seibu Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">돈카츠 마이센</h4>
+              <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-[10px] font-bold">SOFT</span>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">부모님도 부담 없이 드실 수 있는 아주 연하고 부드러운 돈카츠입니다. (세이부 9층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Maisen Seibu Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
 
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_tempura.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="텐푸라">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">TRADITIONAL</div>
+        <!-- Restaurant Item 5 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-yellow-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-yellow-200 opacity-40 absolute -right-4 -bottom-4">sunny</span>
+            <span class="material-symbols-outlined text-5xl text-yellow-600" data-icon="tempura">skillet</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">텐푸라 츠나하치</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">장인이 바로 튀겨주는 바삭하고 정갈한 정통 일본식 튀김 요리. (이케부쿠로 토부 15층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Tempura Tsunahachi Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">텐푸라 츠나하치</h4>
+              <h4 class="text-xs bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-bold uppercase tracking-tighter">Gold</h4>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">눈앞에서 튀겨주는 정통 텐푸라 정식. 정갈하고 깔끔한 맛이 일품입니다. (토부 15층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Tempura Tsunahachi Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
 
-        <div class="group bg-white rounded-3xl overflow-hidden editorial-shadow border border-outline-variant/10 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-          <div class="h-60 overflow-hidden relative">
-            <img src="images/food_ramen.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="라멘">
-            <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold">UNIQUE</div>
+        <!-- Restaurant Item 6 -->
+        <div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden editorial-shadow border border-outline-variant/20 flex flex-col hover:-translate-y-2 transition-all duration-500">
+          <div class="h-40 bg-emerald-50 flex items-center justify-center relative overflow-hidden">
+            <span class="material-symbols-outlined text-7xl text-emerald-200 opacity-40 absolute -right-4 -bottom-4">spa</span>
+            <span class="material-symbols-outlined text-5xl text-emerald-600" data-icon="ramen_dining">ramen_dining</span>
           </div>
           <div class="p-8 flex-1 flex flex-col">
-            <h4 class="font-headline text-2xl font-bold text-on-surface mb-3">아후리 (AFURI)</h4>
-            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-6">유자 향이 가미된 깔끔하고 담백한 국물로 부모님도 좋아하는 라멘. (이케부쿠로 파르코 8층)</p>
-            <button class="w-full bg-surface-container-high text-primary font-bold py-3 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Afuri Ramen Ikebukuro')">구글맵 보기</button>
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-headline text-2xl font-bold text-on-surface">아후리 (AFURI)</h4>
+              <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-[10px] font-bold">LIGHT</span>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed flex-1 mb-8">유자 향의 깔끔한 국물이 돋보이는 라멘. 자극적이지 않아 부모님께 추천합니다. (파르코 8층)</p>
+            <button class="w-full bg-surface-container-high text-primary font-bold py-4 rounded-2xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" onclick="map('Afuri Ramen Ikebukuro')">
+               <span class="material-symbols-outlined text-sm">map</span>구글맵 위치 확인
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <footer class="py-20 text-center bg-surface-container-low border-t border-surface-container-high">
-    <h2 class="font-headline text-2xl font-black text-primary mb-4 italic">TOKYO FAMILY TRIP</h2>
-    <p class="text-on-surface-variant text-sm font-medium mb-8">
-      사랑하는 가족과 함께하는 매 순간이 소중한 기억이 되길 바랍니다.
+  <footer class="py-24 text-center bg-surface-container-low border-t border-surface-container-high">
+    <h2 class="font-headline text-3xl font-black text-primary mb-6 italic tracking-tighter">TOKYO FAMILY TRIP</h2>
+    <p class="text-on-surface-variant text-sm font-medium mb-12 max-w-sm mx-auto leading-relaxed">
+      사진 한 장 없어도, 사랑하는 가족과 함께하는 매 순간이 선명한 기억이 되길 바랍니다.
     </p>
-    <div class="flex justify-center gap-6 mb-12">
-      <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span></span>
-      <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-lg" data-icon="camera_alt">camera_alt</span></span>
-      <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-lg" data-icon="map">map</span></span>
+    <div class="flex justify-center gap-8 mb-16">
+      <span class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm border border-outline-variant/20"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></span>
+      <span class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm border border-outline-variant/20"><span class="material-symbols-outlined" data-icon="map">map</span></span>
+      <span class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm border border-outline-variant/20"><span class="material-symbols-outlined" data-icon="explore">explore</span></span>
     </div>
-    <span class="text-[10px] text-outline uppercase tracking-[0.2em] font-bold">&copy; 2026 Tokyo Family Travel Guide</span>
+    <span class="text-[10px] text-outline uppercase tracking-[0.3em] font-bold">&copy; 2026 Tokyo Family Travel Guide</span>
   </footer>
 
 </main>
 
-<nav class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] z-50 bg-white/90 backdrop-blur-xl shadow-2xl rounded-3xl border border-white/20 overflow-hidden">
-  <div class="flex justify-around items-center h-20 px-2">
-    <a href="#home" class="flex flex-col items-center justify-center text-primary px-5 py-2 transition-transform active:scale-90">
+<nav class="md:hidden fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] z-50 bg-white/90 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-[2.5rem] border border-white/20 overflow-hidden">
+  <div class="flex justify-around items-center h-20 px-4">
+    <a href="#home" class="flex flex-col items-center justify-center text-primary transition-transform active:scale-90">
       <span class="material-symbols-outlined text-2xl" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
-      <span class="text-[9px] font-black mt-1 uppercase tracking-tighter">Home</span>
+      <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Home</span>
     </a>
-    <a href="#plan" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary px-5 py-2 transition-transform active:scale-90">
+    <a href="#plan" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary transition-transform active:scale-90">
       <span class="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
-      <span class="text-[9px] font-black mt-1 uppercase tracking-tighter">Plan</span>
+      <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Plan</span>
     </a>
-    <a href="#tips" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary px-5 py-2 transition-transform active:scale-90">
-      <span class="material-symbols-outlined text-2xl" data-icon="lightbulb">lightbulb</span>
-      <span class="text-[9px] font-black mt-1 uppercase tracking-tighter">Tips</span>
-    </a>
-    <a href="#food" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary px-5 py-2 transition-transform active:scale-90">
+    <a href="#food" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary transition-transform active:scale-90">
       <span class="material-symbols-outlined text-2xl" data-icon="restaurant">restaurant</span>
-      <span class="text-[9px] font-black mt-1 uppercase tracking-tighter">Food</span>
+      <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Food</span>
     </a>
   </div>
 </nav>
