@@ -38,7 +38,7 @@
     <nav class="hidden md:flex gap-8">
       <a class="text-primary font-bold" href="#">홈</a>
       <a class="text-slate-500 hover:text-surface-tint transition-colors" href="#plan">일정</a>
-      <a class="text-slate-500 hover:text-surface-tint transition-colors" href="#gallery">갤러리</a>
+      <a class="text-slate-500 hover:text-surface-tint transition-colors" href="#essentials">여행 팁</a>
       <a class="text-slate-500 hover:text-surface-tint transition-colors" href="#food">맛집</a>
     </nav>
   </div>
@@ -171,38 +171,102 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-24 bg-white overflow-hidden">
+  <!-- Essentials Section (Replaces Gallery) -->
+  <section id="essentials" class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex flex-col mb-16 items-center text-center">
-        <h3 class="font-headline text-4xl font-extrabold text-primary tracking-tight mb-4">📷 이번 여행 미리보기</h3>
-        <p class="text-on-surface-variant max-w-xl leading-relaxed font-medium">우리가 만날 도쿄의 풍경과 미식들</p>
+        <h3 class="font-headline text-4xl font-extrabold text-primary tracking-tight mb-4">✨ 여행을 더 완벽하게</h3>
+        <p class="text-on-surface-variant max-w-xl leading-relaxed font-medium">부모님과 함께하는 여행을 위해 준비한 필수 정보</p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_sushi.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sushi">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Highlights (Icon Based) -->
+        <div class="lg:col-span-4 bg-primary-container/30 rounded-[3rem] p-8 flex flex-col justify-between border border-primary/10">
+          <h4 class="text-xl font-black text-primary mb-8 flex items-center gap-2">
+            <span class="material-symbols-outlined">stars</span> 이번 여행 핵심포인트
+          </h4>
+          <div class="space-y-6 flex-1">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm">
+                <span class="material-symbols-outlined text-3xl">temple_buddhist</span>
+              </div>
+              <div>
+                <span class="block font-bold text-on-surface">전통과 현대</span>
+                <span class="text-xs text-on-surface-variant">아사쿠사와 시부야의 공존</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm">
+                <span class="material-symbols-outlined text-3xl">restaurant_menu</span>
+              </div>
+              <div>
+                <span class="block font-bold text-on-surface">최고의 미식</span>
+                <span class="text-xs text-on-surface-variant">엄선된 스키야키와 장어덮밥</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary shadow-sm">
+                <span class="material-symbols-outlined text-3xl">hotel_class</span>
+              </div>
+              <div>
+                <span class="block font-bold text-on-surface">안락한 휴식</span>
+                <span class="text-xs text-on-surface-variant">부모님을 위한 동선 설계</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="aspect-[3/4] md:row-span-2 rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/hero.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Hero">
-        </div>
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_ramen.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Ramen">
-        </div>
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_sukiyaki.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sukiyaki">
-        </div>
-        <div class="aspect-[3/4] md:row-span-2 rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/tips1.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Tips">
-        </div>
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_tempura.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Tempura">
-        </div>
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_tonkatsu.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Tonkatsu">
-        </div>
-        <div class="aspect-square rounded-3xl overflow-hidden editorial-shadow group">
-          <img src="images/food_unagi.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Unagi">
+
+        <!-- Travel Tips -->
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-surface-container-low rounded-[3rem] p-8 border border-outline-variant/30">
+            <h4 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">lightbulb</span> 알아두면 좋은 꿀팁
+            </h4>
+            <ul class="space-y-4">
+              <li class="flex gap-3 text-sm leading-relaxed text-on-surface-variant">
+                <span class="font-bold text-secondary">01</span>
+                <span>일본은 동전 사용이 많습니다. <strong class="text-on-surface">동전 지갑</strong>을 따로 준비하시면 매우 편리합니다.</span>
+              </li>
+              <li class="flex gap-3 text-sm leading-relaxed text-on-surface-variant">
+                <span class="font-bold text-secondary">02</span>
+                <span>실내나 대중교통 이용 시 <strong class="text-on-surface">마스크 착용</strong>이 여전히 권장되는 분위기입니다.</span>
+              </li>
+              <li class="flex gap-3 text-sm leading-relaxed text-on-surface-variant">
+                <span class="font-bold text-secondary">03</span>
+                <span>대부분의 백화점/식당가에 <strong class="text-on-surface">엘리베이터</strong>가 잘 구비되어 있으니 적극 활용하세요.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Basic Japanese -->
+          <div class="bg-secondary-container/20 rounded-[3rem] p-8 border border-secondary/10">
+            <h4 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary">translate</span> 바로 쓰는 짧은 일본어
+            </h4>
+            <div class="space-y-4">
+              <div class="bg-white/60 p-4 rounded-2xl">
+                <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">감사합니다</span>
+                <div class="flex justify-between items-end mt-1">
+                  <span class="text-lg font-bold text-on-surface">아리가토 고자이마스</span>
+                  <span class="text-xs text-outline italic">Arigato</span>
+                </div>
+              </div>
+              <div class="bg-white/60 p-4 rounded-2xl">
+                <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">얼마인가요?</span>
+                <div class="flex justify-between items-end mt-1">
+                  <span class="text-lg font-bold text-on-surface">이쿠라 데스카?</span>
+                  <span class="text-xs text-outline italic">How much?</span>
+                </div>
+              </div>
+              <div class="bg-white/60 p-4 rounded-2xl">
+                <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">부탁합니다</span>
+                <div class="flex justify-between items-end mt-1">
+                  <span class="text-lg font-bold text-on-surface">오네가이시마스</span>
+                  <span class="text-xs text-outline italic">Please</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -272,7 +336,7 @@
     </div>
   </section>
 
-  <!-- Checklist Section -->
+  <!-- Checklist Section (Expanded) -->
   <section id="checklist" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex flex-col mb-16 items-center text-center">
@@ -280,28 +344,55 @@
         <p class="text-on-surface-variant max-w-xl leading-relaxed font-medium">잊은 건 없는지 마지막으로 확인해 보세요!</p>
       </div>
 
-      <div class="max-w-2xl mx-auto bg-surface-container-low rounded-[2.5rem] p-10 editorial-shadow">
-        <div class="space-y-4">
-          <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
-            <input type="checkbox" class="w-6 h-6 rounded-full border-2 border-outline text-primary focus:ring-primary">
-            <span class="text-lg font-bold text-on-surface">여권 및 항공권 (e-티켓)</span>
-          </label>
-          <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
-            <input type="checkbox" class="w-6 h-6 rounded-full border-2 border-outline text-primary focus:ring-primary">
-            <span class="text-lg font-bold text-on-surface">상비약 (감기약, 소화제, 파스 등)</span>
-          </label>
-          <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
-            <input type="checkbox" class="w-6 h-6 rounded-full border-2 border-outline text-primary focus:ring-primary">
-            <span class="text-lg font-bold text-on-surface">편한 신발 (오래 걸어도 괜찮은 것)</span>
-          </label>
-          <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
-            <input type="checkbox" class="w-6 h-6 rounded-full border-2 border-outline text-primary focus:ring-primary">
-            <span class="text-lg font-bold text-on-surface">돼지코 (110V 변환 어댑터)</span>
-          </label>
-          <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
-            <input type="checkbox" class="w-6 h-6 rounded-full border-2 border-outline text-primary focus:ring-primary">
-            <span class="text-lg font-bold text-on-surface">비지트 재팬 웹 (VJW) QR코드</span>
-          </label>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Essential Docs -->
+        <div class="bg-surface-container-low rounded-[2.5rem] p-10 editorial-shadow">
+          <h4 class="font-bold text-primary mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined">description</span> 필수 서류 및 결제
+          </h4>
+          <div class="space-y-4">
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">여권 (만료일 6개월 확인)</span>
+            </label>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">환전된 엔화 현금 (필수)</span>
+            </label>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">트래블로그/쏠트래블 카드</span>
+            </label>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">비지트 재팬 웹 QR코드 캡처</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Gadgets & Clothing -->
+        <div class="bg-surface-container-low rounded-[2.5rem] p-10 editorial-shadow">
+          <h4 class="font-bold text-primary mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined">devices</span> 전자기기 및 용품
+          </h4>
+          <div class="space-y-4">
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">110V 돼지코 (변환 어댑터)</span>
+            </label>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">보조배터리 및 충전선</span>
+            </li>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">편한 운동화 (발이 편한 것)</span>
+            </label>
+            <label class="flex items-center gap-4 p-4 bg-white rounded-2xl cursor-pointer hover:bg-primary/5 transition-colors">
+              <input type="checkbox" class="w-5 h-5 rounded-full border-2 border-outline text-primary focus:ring-primary">
+              <span class="text-sm font-bold text-on-surface">상비약 (감기, 소화제, 파스)</span>
+            </label>
+          </div>
         </div>
       </div>
     </div>
@@ -345,9 +436,9 @@
       <span class="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
       <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Plan</span>
     </a>
-    <a href="#gallery" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary transition-transform active:scale-90">
-      <span class="material-symbols-outlined text-2xl" data-icon="photo_library">photo_library</span>
-      <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Gallery</span>
+    <a href="#essentials" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary transition-transform active:scale-90">
+      <span class="material-symbols-outlined text-2xl" data-icon="lightbulb">lightbulb</span>
+      <span class="text-[10px] font-black mt-1 uppercase tracking-tighter">Tips</span>
     </a>
     <a href="#food" class="flex flex-col items-center justify-center text-slate-400 hover:text-primary transition-transform active:scale-90">
       <span class="material-symbols-outlined text-2xl" data-icon="restaurant">restaurant</span>
@@ -355,6 +446,7 @@
     </a>
   </div>
 </nav>
+
 
 </body>
 </html>
