@@ -66,3 +66,51 @@ if (window.tailwind) {
 function map(place){ 
   window.open('https://www.google.com/maps/search/' + encodeURIComponent(place)); 
 }
+
+// Countdown Timer
+const countdownDate = new Date("April 12, 2026 00:00:00").getTime();
+
+const updateCountdown = setInterval(function() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
+
+  if (daysEl) daysEl.innerText = days.toString().padStart(2, '0');
+  if (hoursEl) hoursEl.innerText = hours.toString().padStart(2, '0');
+  if (minutesEl) minutesEl.innerText = minutes.toString().padStart(2, '0');
+  if (secondsEl) secondsEl.innerText = seconds.toString().padStart(2, '0');
+
+  if (distance < 0) {
+    clearInterval(updateCountdown);
+    if (daysEl) daysEl.innerText = "00";
+    if (hoursEl) hoursEl.innerText = "00";
+    if (minutesEl) minutesEl.innerText = "00";
+    if (secondsEl) secondsEl.innerText = "00";
+  }
+}, 1000);
+
+// Real-time Tokyo Time
+function updateTokyoTime() {
+  const options = {
+    timeZone: 'Asia/Tokyo',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  };
+  const formatter = new Intl.DateTimeFormat([], options);
+  const tokyoTime = formatter.format(new Date());
+  const tokyoTimeEl = document.getElementById("tokyo-time");
+  if (tokyoTimeEl) tokyoTimeEl.innerText = `TOKYO ${tokyoTime}`;
+}
+
+setInterval(updateTokyoTime, 1000);
+updateTokyoTime();
